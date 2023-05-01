@@ -1,0 +1,964 @@
+--Yow rembau most wanted yow, dont touch below here
+local findingHoboX = game.CoreGui:FindFirstChild("Hobo_X")
+if findingHoboX then
+    findingHoboX:Destroy()
+end
+
+local Hobo_X = Instance.new("ScreenGui")
+local Home = Instance.new("ImageButton")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local Destroy = Instance.new("TextButton")
+local AudioId = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local Frame_3 = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local Frame_4 = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+local Frame_5 = Instance.new("Frame")
+local MAX = Instance.new("TextButton")
+local MAY = Instance.new("TextButton")
+local MAZ = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local Frame_6 = Instance.new("Frame")
+local WAX = Instance.new("TextButton")
+local WAY = Instance.new("TextButton")
+local WAZ = Instance.new("TextButton")
+local WavesOn = Instance.new("TextButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local Amount = Instance.new("TextBox")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local WaveInt = Instance.new("TextBox")
+local Distance = Instance.new("TextBox")
+local Speed = Instance.new("TextBox")
+
+Hobo_X.Name = "Hobo_X"
+Hobo_X.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Hobo_X.ResetOnSpawn = false
+
+Home.Name = "Home"
+Home.Parent = Hobo_X
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.Position = UDim2.new(0.910828054, 0, 0.419047624, 0)
+Home.Size = UDim2.new(0, 50, 0, 50)
+Home.Image = "rbxassetid://403476052"
+
+Frame.Parent = Home
+Frame.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Frame.BackgroundTransparency = 0.300
+Frame.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame.Position = UDim2.new(-8.86986637, 0, -1.76058722, 0)
+Frame.Size = UDim2.new(0, 420, 0, 250)
+Frame.Visible = false
+
+Frame_2.Name = "Frame_2"
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Frame_2.BackgroundTransparency = 0.300
+Frame_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame_2.Position = UDim2.new(-0.00117630733, 0, -0.103542604, 0)
+Frame_2.Size = UDim2.new(0, 420, 0, 25)
+
+TextLabel_3.Name = "TextLabel_3"
+TextLabel_3.Parent = Frame_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_3.Position = UDim2.new(0.485865206, 0, -0.0568920895, 0)
+TextLabel_3.Size = UDim2.new(0, 10, 0, 25)
+TextLabel_3.Font = Enum.Font.Ubuntu
+TextLabel_3.Text = "–"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 15.000
+
+TextLabel_2.Name = "TextLabel_2"
+TextLabel_2.Parent = Frame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_2.Position = UDim2.new(0.511675835, 0, -0.0390216038, 0)
+TextLabel_2.Size = UDim2.new(0, 50, 0, 25)
+TextLabel_2.Font = Enum.Font.Ubuntu
+TextLabel_2.Text = "v1.2 (a)"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 15.000
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel.Position = UDim2.new(0.3688187, 0, -0.0390216038, 0)
+TextLabel.Size = UDim2.new(0, 50, 0, 25)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = "Hobo X"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 15.000
+
+Destroy.Name = "Destroy"
+Destroy.Parent = Frame_2
+Destroy.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Destroy.BackgroundTransparency = 0.300
+Destroy.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Destroy.Position = UDim2.new(0.959523797, 0, 0.119999997, 0)
+Destroy.Size = UDim2.new(0, 17, 0, 17)
+Destroy.Font = Enum.Font.Arial
+Destroy.Text = "X"
+Destroy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Destroy.TextSize = 14.000
+
+AudioId.Name = "AudioId"
+AudioId.Parent = Frame
+AudioId.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+AudioId.BackgroundTransparency = 0.300
+AudioId.BorderColor3 = Color3.fromRGB(30, 30, 30)
+AudioId.Position = UDim2.new(0.0250000004, 0, 0.0399999991, 0)
+AudioId.Size = UDim2.new(0, 100, 0, 20)
+AudioId.Font = Enum.Font.Roboto
+AudioId.PlaceholderText = "Audio-ID"
+AudioId.Text = ""
+AudioId.TextColor3 = Color3.fromRGB(255, 255, 255)
+AudioId.TextSize = 14.000
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextButton.BackgroundTransparency = 0.300
+TextButton.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextButton.Position = UDim2.new(0.0239658169, 0, 0.161970153, 0)
+TextButton.Size = UDim2.new(0, 60, 0, 25)
+TextButton.Font = Enum.Font.Ubuntu
+TextButton.Text = "Visualize"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextButton_2.BackgroundTransparency = 0.300
+TextButton_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_2.Position = UDim2.new(0.023, 0, 0.282999992, 0)
+TextButton_2.Size = UDim2.new(0, 65, 0, 25)
+TextButton_2.Font = Enum.Font.Ubuntu
+TextButton_2.Text = "Mass-Play"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 14.000
+
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.285714269, 0, -0.00400000019, 0)
+Frame_3.Size = UDim2.new(0, 1, 0, 250)
+
+TextLabel_4.Name = "TextLabel_4"
+TextLabel_4.Parent = Frame_3
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(10, 0, 0.0399999991, 0)
+TextLabel_4.Size = UDim2.new(0, 50, 0, 15)
+TextLabel_4.Font = Enum.Font.Unknown
+TextLabel_4.Text = "Settings"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 14.000
+
+Frame_4.Parent = Frame_3
+Frame_4.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Frame_4.BackgroundTransparency = 0.300
+Frame_4.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame_4.Position = UDim2.new(10, 0, 0.119999997, 0)
+Frame_4.Size = UDim2.new(0, 280, 0, 210)
+
+TextLabel_5.Name = "TextLabel_5"
+TextLabel_5.Parent = Frame_4
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.0140000004, 0, 0.0140000004, 0)
+TextLabel_5.Size = UDim2.new(0, 70, 0, 20)
+TextLabel_5.Font = Enum.Font.Ubuntu
+TextLabel_5.Text = "Main Angle"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 14.000
+
+Frame_5.Parent = Frame_4
+Frame_5.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_5.Position = UDim2.new(0.010714286, 0, 0.104761906, 0)
+Frame_5.Size = UDim2.new(0, 105, 0, 25)
+
+MAX.Name = "MAX"
+MAX.Parent = Frame_5
+MAX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MAX.Size = UDim2.new(0, 35, 0, 25)
+MAX.Font = Enum.Font.Ubuntu
+MAX.Text = "X"
+MAX.TextColor3 = Color3.fromRGB(0, 0, 0)
+MAX.TextScaled = true
+MAX.TextSize = 14.000
+MAX.TextWrapped = true
+
+MAY.Name = "MAY"
+MAY.Parent = Frame_5
+MAY.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MAY.BackgroundTransparency = 1.000
+MAY.Position = UDim2.new(0.342857152, 0, 0, 0)
+MAY.Size = UDim2.new(0, 35, 0, 25)
+MAY.Font = Enum.Font.SourceSans
+MAY.Text = "Y"
+MAY.TextColor3 = Color3.fromRGB(255, 255, 255)
+MAY.TextScaled = true
+MAY.TextSize = 14.000
+MAY.TextWrapped = true
+
+MAZ.Name = "MAZ"
+MAZ.Parent = Frame_5
+MAZ.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MAZ.BackgroundTransparency = 1.000
+MAZ.Position = UDim2.new(0.676190495, 0, 0, 0)
+MAZ.Size = UDim2.new(0, 35, 0, 25)
+MAZ.Font = Enum.Font.SourceSans
+MAZ.Text = "Z"
+MAZ.TextColor3 = Color3.fromRGB(255, 255, 255)
+MAZ.TextScaled = true
+MAZ.TextSize = 14.000
+MAZ.TextWrapped = true
+
+TextLabel_6.Name = "TextLabel_6"
+TextLabel_6.Parent = Frame_4
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.0140000479, 0, 0.261999935, 0)
+TextLabel_6.Size = UDim2.new(0, 30, 0, 20)
+TextLabel_6.Font = Enum.Font.Ubuntu
+TextLabel_6.Text = "Misc"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 14.000
+
+Frame_6.Parent = Frame_4
+Frame_6.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_6.Position = UDim2.new(0.0109999999, 0, 0.455000013, 0)
+Frame_6.Size = UDim2.new(0, 105, 0, 25)
+
+WAX.Name = "WAX"
+WAX.Parent = Frame_6
+WAX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WAX.BackgroundTransparency = 1.000
+WAX.Size = UDim2.new(0, 35, 0, 25)
+WAX.Font = Enum.Font.Ubuntu
+WAX.Text = "X"
+WAX.TextColor3 = Color3.fromRGB(255, 255, 255)
+WAX.TextScaled = true
+WAX.TextSize = 14.000
+WAX.TextWrapped = true
+
+WAY.Name = "WAY"
+WAY.Parent = Frame_6
+WAY.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WAY.Position = UDim2.new(0.342857152, 0, 0, 0)
+WAY.Size = UDim2.new(0, 35, 0, 25)
+WAY.Font = Enum.Font.SourceSans
+WAY.Text = "Y"
+WAY.TextColor3 = Color3.fromRGB(0, 0, 0)
+WAY.TextScaled = true
+WAY.TextSize = 14.000
+WAY.TextWrapped = true
+
+WAZ.Name = "WAZ"
+WAZ.Parent = Frame_6
+WAZ.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WAZ.BackgroundTransparency = 1.000
+WAZ.Position = UDim2.new(0.676190495, 0, 0, 0)
+WAZ.Size = UDim2.new(0, 35, 0, 25)
+WAZ.Font = Enum.Font.SourceSans
+WAZ.Text = "Z"
+WAZ.TextColor3 = Color3.fromRGB(255, 255, 255)
+WAZ.TextScaled = true
+WAZ.TextSize = 14.000
+WAZ.TextWrapped = true
+
+WavesOn.Name = "WavesOn"
+WavesOn.Parent = Frame_6
+WavesOn.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+WavesOn.BorderSizePixel = 0
+WavesOn.Position = UDim2.new(0.533333361, 0, -0.840000033, 0)
+WavesOn.Size = UDim2.new(0, 15, 0, 15)
+WavesOn.Font = Enum.Font.SourceSans
+WavesOn.Text = ""
+WavesOn.TextColor3 = Color3.fromRGB(0, 0, 0)
+WavesOn.TextSize = 14.000
+
+TextLabel_7.Name = "TextLabel_7"
+TextLabel_7.Parent = Frame_4
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.0140000479, 0, 0.357238054, 0)
+TextLabel_7.Size = UDim2.new(0, 50, 0, 15)
+TextLabel_7.Font = Enum.Font.Ubuntu
+TextLabel_7.Text = "Enabled"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 14.000
+
+TextLabel_8.Name = "TextLabel_8"
+TextLabel_8.Parent = Frame_4
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.660428703, 0, 0.0239047091, 0)
+TextLabel_8.Size = UDim2.new(0, 30, 0, 15)
+TextLabel_8.Font = Enum.Font.Ubuntu
+TextLabel_8.Text = "Misc"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 14.000
+
+Amount.Name = "Amount"
+Amount.Parent = Frame
+Amount.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Amount.BackgroundTransparency = 0.300
+Amount.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Amount.Position = UDim2.new(0.0250000004, 0, 0.612000048, 0)
+Amount.Size = UDim2.new(0, 100, 0, 20)
+Amount.Font = Enum.Font.Roboto
+Amount.PlaceholderText = "Amount"
+Amount.Text = ""
+Amount.TextColor3 = Color3.fromRGB(255, 255, 255)
+Amount.TextSize = 14.000
+
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextButton_3.BackgroundTransparency = 0.300
+TextButton_3.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_3.Position = UDim2.new(0.0250992551, 0, 0.733034313, 0)
+TextButton_3.Size = UDim2.new(0, 85, 0, 25)
+TextButton_3.Font = Enum.Font.Ubuntu
+TextButton_3.Text = "Dupe Amount"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 14.000
+
+TextButton_4.Parent = Frame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextButton_4.BackgroundTransparency = 0.300
+TextButton_4.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_4.Position = UDim2.new(0.0260000005, 0, 0.853999972, 0)
+TextButton_4.Size = UDim2.new(0, 70, 0, 25)
+TextButton_4.Font = Enum.Font.Ubuntu
+TextButton_4.Text = "Steal Tools"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 14.000
+
+TextButton_5.Parent = Frame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextButton_5.BackgroundTransparency = 0.300
+TextButton_5.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_5.Position = UDim2.new(0.647355497, 0, 0.20284228, 0)
+TextButton_5.Size = UDim2.new(0, 115, 0, 25)
+TextButton_5.Font = Enum.Font.Ubuntu
+TextButton_5.Text = "Sync Time Position"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextSize = 14.000
+
+WaveInt.Name = "WaveInt"
+WaveInt.Parent = Frame
+WaveInt.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+WaveInt.BackgroundTransparency = 0.300
+WaveInt.BorderColor3 = Color3.fromRGB(30, 30, 30)
+WaveInt.Position = UDim2.new(0.665476143, 0, 0.335999995, 0)
+WaveInt.Size = UDim2.new(0, 100, 0, 20)
+WaveInt.Font = Enum.Font.Roboto
+WaveInt.PlaceholderText = "Wave Intensity [3]"
+WaveInt.Text = ""
+WaveInt.TextColor3 = Color3.fromRGB(255, 255, 255)
+WaveInt.TextSize = 14.000
+
+Distance.Name = "Distance"
+Distance.Parent = Frame
+Distance.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Distance.BackgroundTransparency = 0.300
+Distance.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Distance.Position = UDim2.new(0.665000021, 0, 0.460000008, 0)
+Distance.Size = UDim2.new(0, 100, 0, 20)
+Distance.Font = Enum.Font.Roboto
+Distance.PlaceholderText = "Distance [5]"
+Distance.Text = ""
+Distance.TextColor3 = Color3.fromRGB(255, 255, 255)
+Distance.TextSize = 14.000
+
+Speed.Name = "Speed"
+Speed.Parent = Frame
+Speed.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Speed.BackgroundTransparency = 0.300
+Speed.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Speed.Position = UDim2.new(0.665000021, 0, 0.592000008, 0)
+Speed.Size = UDim2.new(0, 100, 0, 20)
+Speed.Font = Enum.Font.Roboto
+Speed.PlaceholderText = "Speed [1]"
+Speed.Text = ""
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed.TextSize = 14.000
+
+-- Scripts:
+
+local function EEZGWGK_fake_script() -- Destroy.LocalScript 
+	local script = Instance.new('LocalScript', Destroy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(EEZGWGK_fake_script)()
+local function TVCWPH_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local currentid=""
+	local currentconnection=nil
+	local vis = nil
+	local dt =0
+	local CurrentSound=nil
+	local CurrentTimePosition=0
+	game:service'RunService'.Stepped:Connect(function(e,d)
+		dt+=d
+	end)
+	local dont=1
+	local function setupadded()
+		game.Players.LocalPlayer.Character.ChildAdded:Connect(function(child)
+			if child:IsA("Tool") and dont ==0 then
+				wait()
+				child.Parent=game.Players.LocalPlayer.Backpack
+				wait(.3)
+				dont=1
+				if vis ~=nil then
+					vis(currentid,CurrentTimePosition)
+				end
+			end
+		end)
+	end
+	setupadded()
+	vis=function(id,timepos)
+		_G.tov={}
+		if _G.NetFix==nil then
+			_G.NetFix=" "
+			game:service'RunService'.Heartbeat:Connect(function()
+				for i,v in pairs(_G.tov) do
+					v[1].Velocity=Vector3.new(2e2,0,0)
+					v[1].CFrame=v[2].CFrame
+				end
+			end)
+		end
+		local Stopped=false
+		local visstuff={}
+		local function align(i)
+			local l=Instance.new("Part")
+			l.Transparency=1
+			l.Parent=i.Parent
+			l.Size=Vector3.new(0,0,0)
+			l.Name=""
+			l.CanCollide=false
+			l.Anchored=true
+			l.CFrame=i.CFrame
+			table.insert(_G.tov,{i,l})
+			local att0 = Instance.new("Attachment", i)
+			att0.Position = Vector3.new(0,0,0)
+			local att1 = Instance.new("Attachment", l)
+			att1.Position = Vector3.new(0,0,0)
+			local AP = Instance.new("AlignPosition", i)
+			AP.Attachment0 = att0
+			AP.Attachment1 = att1
+			AP.RigidityEnabled = true
+			AP.ReactionForceEnabled = false
+			AP.ApplyAtCenterOfMass = true
+			AP.MaxForce = 9999999
+			AP.MaxVelocity = math.huge
+			AP.Responsiveness = 200
+			local AO = Instance.new("AlignOrientation", i)
+			AO.Attachment0 = att0
+			AO.Attachment1 = att1
+			AO.ReactionTorqueEnabled = false
+			AO.PrimaryAxisOnly = false
+			AO.MaxTorque = 9999999
+			AO.MaxAngularVelocity = math.huge
+			AO.Responsiveness = 200
+			table.insert(visstuff,{AO,AP,att0,att1,l})
+			return l
+		end
+		local Visualizer={}
+		local First=false
+		local Handles={}
+		local ToolCount=0
+		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			if v:IsA("Tool") then
+				ToolCount=ToolCount+1
+			end
+		end
+		local cf=game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			if v:IsA("Tool") then
+				coroutine.wrap(function()
+					if First==false then
+						First=v
+					end
+					local Handle=v:FindFirstChildOfClass("Part")
+					v.Parent=game.Players.LocalPlayer.Character
+					if Handle:FindFirstChildOfClass("Sound") then
+						Handle:FindFirstChildOfClass("Sound").Parent=Instance.new("Part")
+					end
+					currentid=id
+					v:FindFirstChildOfClass("RemoteEvent"):FireServer("PlaySong",(id))
+					repeat wait() until Handle:FindFirstChildOfClass("Sound") and Handle:FindFirstChildOfClass("Sound").IsPlaying
+					for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+						if v.Name=="RightGrip" then
+							v:Destroy()
+						end
+					end
+					Handle.Name=""
+					if First==v then
+						CurrentSound=Handle:FindFirstChildOfClass("Sound")
+					end
+					Handle:FindFirstChildOfClass("Sound").Playing=false
+					coroutine.wrap(function()
+						repeat wait() until v.Parent~=game.Players.LocalPlayer.Character
+						Handle.Name="Handle"
+						Stopped=true
+						dont=1
+						_G.tov={}
+						for i,v in pairs(visstuff) do
+							for i,v in pairs(v) do
+								v:Destroy()
+							end
+						end
+					end)()
+					table.insert(Handles,Handle)
+					table.insert(Visualizer,align(Handle))
+				end)()
+			end
+		end
+		local Root=game.Players.LocalPlayer.Character.HumanoidRootPart
+		repeat wait() until #Visualizer==ToolCount and CurrentSound
+		wait(1)
+		for i,v in pairs(Handles) do
+			coroutine.wrap(function()
+				v:FindFirstChildOfClass("Sound").TimePosition=timepos
+				v:FindFirstChildOfClass("Sound").Playing=true
+			end)()
+		end
+		spawn(function()
+			while wait(.6) do
+				if Stopped == true then
+					break
+				end
+				if CurrentSound.IsPlaying == true then
+					CurrentTimePosition=CurrentSound.TimePosition
+				end
+			end
+		end)
+		local RenderStepped = game:GetService('RunService').RenderStepped
+		local Wait = RenderStepped.Wait
+		local Selected=CurrentSound
+		local p = Instance.new("Part")
+		local function CF2V(cf)
+			p.CFrame=cf
+			return p.Rotation
+		end
+		local function AngleFromSettings(angle,str)
+			if str=="X" then
+				return CFrame.Angles(angle,0,0)
+			elseif str=="Y" then
+				return CFrame.Angles(0,angle,0)
+			elseif str=="Z" then
+				return CFrame.Angles(0,0,angle)
+			end
+		end
+		local function VectorFromSettings(angle,str)
+			if str=="X" then
+				return Vector3.new(angle,0,0)
+			elseif str=="Y" then
+				return Vector3.new(0,angle,0)
+			elseif str=="Z" then
+				return Vector3.new(0,0,angle)
+			end
+		end
+		dont=0
+		setupadded()
+		for K,V in next, Visualizer do
+			coroutine.wrap(function()
+				repeat
+					local Spin = 0
+					repeat
+						if CurrentSound then
+							local Volume = CurrentSound['PlaybackLoudness']
+							local Iterator=math.rad(Spin+(K*(360/#Visualizer)))
+							local Z = _G.Distance + Volume / (1 ~= 100 and (100 - 1) or .01)
+							local G =  Volume / (35 ~= 100 and (100 - 35) or .01)
+							local P = CFrame.new(Root['Position']) * AngleFromSettings(Iterator,_G.VisAngle) * CFrame.new(0,0,Z)
+							local AddVector =Vector3.new(0,0,0)
+							if _G.WavesOn == "On" then
+								AddVector=VectorFromSettings(math.sin((((dt*_G.WaveInt)+(K/#Visualizer)*(math.pi*2)))),_G.WavesAngle)
+							end
+							V['Position'] = P.p+AddVector
+							V['Rotation'] = CF2V(CFrame.new(V.Position, Root['Position'] + Vector3.new(0, G, 0)))
+						end
+						Spin+=_G.Speed
+						game:service'RunService'.RenderStepped:Wait()
+					until Stopped or ((Spin >= 360)) 
+				until Stopped
+				ccc:Disconnect()
+			end)()
+		end
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		vis(script.Parent.Parent.AudioId.Text:gsub("%D+", ""),0)
+	end)
+end
+coroutine.wrap(TVCWPH_fake_script)()
+local function EJFITV_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Backpack=game.Players.LocalPlayer.Backpack
+		local lp=game.Players.LocalPlayer
+		local tosync=false
+		local tt=0
+		for i,v in pairs(Backpack:GetChildren()) do
+			if v:IsA("Tool") then
+				tt=tt+1
+			end
+		end
+		local t = {}
+		for i,v in pairs(Backpack:GetChildren()) do
+			if v:IsA("Tool") then
+				coroutine.wrap(function()
+					if v.Handle:FindFirstChildOfClass("Sound") then
+						v.Handle:FindFirstChildOfClass("Sound"):Destroy()
+					end
+					v.Parent=lp.Character
+					v:FindFirstChildOfClass("RemoteEvent"):FireServer("PlaySong",(script.Parent.Parent.AudioId.Text:gsub("%D+", "")))
+					repeat wait() until v.Handle:FindFirstChildOfClass("Sound")
+					repeat wait() until v.Handle:FindFirstChildOfClass("Sound").IsPlaying
+					v.Handle:FindFirstChildOfClass("Sound").Playing=false
+					table.insert(t,v)
+				end)()
+			end
+		end
+		repeat game:service'RunService'.Heartbeat:Wait() until #t==tt
+		wait(1)
+		for i,v in pairs(t) do
+			coroutine.wrap(function()
+				v.Handle:FindFirstChildOfClass("Sound").TimePosition=0
+				v.Handle:FindFirstChildOfClass("Sound").Playing=true
+			end)()
+		end
+	end)
+end
+coroutine.wrap(EJFITV_fake_script)()
+local function YZVRIZG_fake_script() -- MAX.LocalScript 
+	local script = Instance.new('LocalScript', MAX)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.VisAngle=script.Parent.Name:gsub("MA","")
+	end)
+	while wait() do
+		if script.Parent.Name=="MA"..tostring(_G.VisAngle) then
+			script.Parent.BackgroundTransparency=0
+			script.Parent.TextColor3=Color3.fromRGB(0, 0, 0)
+		else
+			script.Parent.BackgroundTransparency=1
+			script.Parent.TextColor3=Color3.fromRGB(255,255,255)
+		end
+	end
+end
+coroutine.wrap(YZVRIZG_fake_script)()
+local function BWKMSS_fake_script() -- MAY.LocalScript 
+	local script = Instance.new('LocalScript', MAY)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.VisAngle=script.Parent.Name:gsub("MA","")
+	end)
+	while wait() do
+		if script.Parent.Name=="MA"..tostring(_G.VisAngle) then
+			script.Parent.BackgroundTransparency=0
+			script.Parent.TextColor3=Color3.fromRGB(0, 0, 0)
+		else
+			script.Parent.BackgroundTransparency=1
+			script.Parent.TextColor3=Color3.fromRGB(255,255,255)
+		end
+	end
+end
+coroutine.wrap(BWKMSS_fake_script)()
+local function ETWF_fake_script() -- MAZ.LocalScript 
+	local script = Instance.new('LocalScript', MAZ)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.VisAngle=script.Parent.Name:gsub("MA","")
+	end)
+	while wait() do
+		if script.Parent.Name=="MA"..tostring(_G.VisAngle) then
+			script.Parent.BackgroundTransparency=0
+			script.Parent.TextColor3=Color3.fromRGB(0, 0, 0)
+		else
+			script.Parent.BackgroundTransparency=1
+			script.Parent.TextColor3=Color3.fromRGB(255,255,255)
+		end
+	end
+end
+coroutine.wrap(ETWF_fake_script)()
+local function EWFT_fake_script() -- WAX.LocalScript 
+	local script = Instance.new('LocalScript', WAX)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.WavesAngle=script.Parent.Name:gsub("WA","")
+	end)
+	while wait() do
+		if script.Parent.Name=="WA"..tostring(_G.WavesAngle) then
+			script.Parent.BackgroundTransparency=0
+			script.Parent.TextColor3=Color3.fromRGB(0, 0, 0)
+		else
+			script.Parent.BackgroundTransparency=1
+			script.Parent.TextColor3=Color3.fromRGB(255,255,255)
+		end
+	end
+end
+coroutine.wrap(EWFT_fake_script)()
+local function IKJNUCE_fake_script() -- WAY.LocalScript 
+	local script = Instance.new('LocalScript', WAY)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.WavesAngle=script.Parent.Name:gsub("WA","")
+	end)
+	while wait() do
+		if script.Parent.Name=="WA"..tostring(_G.WavesAngle) then
+			script.Parent.BackgroundTransparency=0
+			script.Parent.TextColor3=Color3.fromRGB(0, 0, 0)
+		else
+			script.Parent.BackgroundTransparency=1
+			script.Parent.TextColor3=Color3.fromRGB(255,255,255)
+		end
+	end
+end
+coroutine.wrap(IKJNUCE_fake_script)()
+local function GAJC_fake_script() -- WAZ.LocalScript 
+	local script = Instance.new('LocalScript', WAZ)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.WavesAngle=script.Parent.Name:gsub("WA","")
+	end)
+	while wait() do
+		if script.Parent.Name=="WA"..tostring(_G.WavesAngle) then
+			script.Parent.BackgroundTransparency=0
+			script.Parent.TextColor3=Color3.fromRGB(0, 0, 0)
+		else
+			script.Parent.BackgroundTransparency=1
+			script.Parent.TextColor3=Color3.fromRGB(255,255,255)
+		end
+	end
+end
+coroutine.wrap(GAJC_fake_script)()
+local function LEAGA_fake_script() -- WavesOn.LocalScript 
+	local script = Instance.new('LocalScript', WavesOn)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if "Waves".._G.WavesOn==script.Parent.Name then
+			_G.WavesOn="Off"
+		else
+			_G.WavesOn="On"
+		end
+	end)
+	while wait() do
+		if script.Parent.Name=="Waves"..tostring(_G.WavesOn) then
+			script.Parent.BackgroundColor3=Color3.fromRGB(255, 255, 255)
+		else
+			script.Parent.BackgroundColor3=Color3.fromRGB(30, 30, 30)
+		end
+	end 
+end
+coroutine.wrap(LEAGA_fake_script)()
+local function XSEZ_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i=1,tonumber(script.Parent.Parent.Amount.Text) or 1 do
+			local char=game.Players.LocalPlayer.Character
+			game.Players.LocalPlayer.Character=nil
+			game.Players.LocalPlayer.Character=char
+			char.Animate:Destroy()
+			char.HumanoidRootPart.CFrame=CFrame.new(0,9999,0)
+			wait(.1)
+			char.HumanoidRootPart.Anchored=true
+			for i,v in pairs(char:GetChildren()) do
+				if v:IsA("Tool") then
+					v.Parent=game.Players.LocalPlayer.Backpack
+				end
+			end
+			wait(game.Players.RespawnTime-0.3)
+			local t = {}
+			for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+				v.Parent=char
+				v.Parent=workspace
+				t[i]=v
+			end
+			char.Humanoid:Destroy()
+			game.Players.LocalPlayer.Character=nil
+			game.Players.LocalPlayer.CharacterAdded:Wait()
+			char=game.Players.LocalPlayer.Character
+			char:WaitForChild("Humanoid")
+			wait(.1)
+			for i,v in pairs(t) do
+				char.Humanoid:EquipTool(v)
+			end
+			wait(.3)
+		end	
+	end)
+end
+coroutine.wrap(XSEZ_fake_script)()
+local function GGKDMY_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	_G.grabtools=false
+	game:service'RunService'.Heartbeat:Connect(function()
+		local h=game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+		if _G.grabtools==true and h then
+			for i,v in pairs(workspace:GetChildren()) do
+				coroutine.wrap(function()
+					if v:IsA("Tool") then
+						h:EquipTool(v)
+					end	
+				end)()
+			end
+		end
+	end)
+	spawn(function()
+		while wait() do
+			if _G.grabtools==true then
+				script.Parent.TextColor3=Color3.fromRGB(0, 0, 0)
+				script.Parent.BackgroundColor3=Color3.fromRGB(255, 255, 255)
+			else
+				script.Parent.TextColor3=Color3.fromRGB(255,255,255)
+				script.Parent.BackgroundColor3=Color3.fromRGB(65, 65, 65)
+			end
+		end 	
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.grabtools=not _G.grabtools
+	end)
+end
+coroutine.wrap(GGKDMY_fake_script)()
+local function CUSK_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		pcall(function()
+			for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChildOfClass("Part"):FindFirstChildOfClass("Sound") then
+					coroutine.wrap(function()
+						v:FindFirstChildOfClass("Part"):FindFirstChildOfClass("Sound").Playing=false
+						wait()
+						v:FindFirstChildOfClass("Part"):FindFirstChildOfClass("Sound").TimePosition=0
+						v:FindFirstChildOfClass("Part"):FindFirstChildOfClass("Sound").Playing=true
+					end)()
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(CUSK_fake_script)()
+local function HKBEDR_fake_script() -- WaveInt.LocalScript 
+	local script = Instance.new('LocalScript', WaveInt)
+
+	_G[script.Parent.Name]=3
+	script.Parent.Changed:Connect(function(t)
+		if t=="Text" then
+			_G[script.Parent.Name]=tonumber(script.Parent.Text) or 0
+		end
+	end)
+end
+coroutine.wrap(HKBEDR_fake_script)()
+local function HPPHMQ_fake_script() -- Distance.LocalScript 
+	local script = Instance.new('LocalScript', Distance)
+
+	_G[script.Parent.Name]=5
+	script.Parent.Changed:Connect(function(t)
+		if t=="Text" then
+			_G[script.Parent.Name]=tonumber(script.Parent.Text) or 0
+		end
+	end)
+end
+coroutine.wrap(HPPHMQ_fake_script)()
+local function PUJGYQ_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	_G[script.Parent.Name]=1
+	script.Parent.Changed:Connect(function(t)
+		if t=="Text" then
+			_G[script.Parent.Name]=tonumber(script.Parent.Text) or 0
+		end
+	end)
+end
+coroutine.wrap(PUJGYQ_fake_script)()
+local function BSSNHN_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	_G.VisAngle="X"
+	_G.WavesOn="Off"
+	_G.WavesAngle="Y"
+	_G.BoomboxDependantSpeed="Off"
+end
+coroutine.wrap(BSSNHN_fake_script)()
+local function CCQUIZ_fake_script() -- Frame.Draggable 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0.50
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(CCQUIZ_fake_script)()
+local function TXCHTI_fake_script() -- Home.ToggleFunction 
+	local script = Instance.new('LocalScript', Home)
+
+	local ee = false
+	script.Parent.MouseButton1Down:Connect(function()
+		ee = not ee
+		if ee then
+			script.Parent.Frame.Visible = true
+		else
+			script.Parent.Frame.Visible = false
+		end
+	end)
+end
+coroutine.wrap(TXCHTI_fake_script)()
+
+Hobo_X.Parent = game:WaitForChild("CoreGui")
